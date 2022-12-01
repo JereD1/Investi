@@ -32,41 +32,45 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Register_Btn = new System.Windows.Forms.Button();
+            this.Login_Btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Poppins ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(13, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 64);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome To Investi";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Font = new System.Drawing.Font("Poppins ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(12, 95);
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(13, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(369, 70);
             this.label2.TabIndex = 1;
             this.label2.Text = "Let\'s Get Started";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Register_Btn);
+            this.panel1.Controls.Add(this.Login_Btn);
             this.panel1.Location = new System.Drawing.Point(-1, -5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(503, 734);
@@ -76,46 +80,44 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(159, 698);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.Location = new System.Drawing.Point(68, 698);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 25);
+            this.label3.Size = new System.Drawing.Size(223, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "All Rights Reserved";
+            this.label3.Text = "All Rights Reserved 2022";
             // 
-            // button2
+            // Register_Btn
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(29, 385);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(292, 66);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Register_Btn.BackColor = System.Drawing.Color.DarkBlue;
+            this.Register_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Register_Btn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Register_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Register_Btn.Location = new System.Drawing.Point(29, 385);
+            this.Register_Btn.Name = "Register_Btn";
+            this.Register_Btn.Size = new System.Drawing.Size(292, 66);
+            this.Register_Btn.TabIndex = 1;
+            this.Register_Btn.Text = "Register";
+            this.Register_Btn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // Login_Btn
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(29, 267);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(292, 66);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Login_Btn.BackColor = System.Drawing.Color.DarkBlue;
+            this.Login_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login_Btn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Login_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Login_Btn.Location = new System.Drawing.Point(29, 299);
+            this.Login_Btn.Name = "Login_Btn";
+            this.Login_Btn.Size = new System.Drawing.Size(292, 66);
+            this.Login_Btn.TabIndex = 0;
+            this.Login_Btn.Text = "Login";
+            this.Login_Btn.UseVisualStyleBackColor = false;
             // 
             // investi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 723);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "investi";
@@ -125,7 +127,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -134,8 +135,8 @@
         private Label label1;
         private Label label2;
         private Panel panel1;
-        private Button button2;
-        private Button button1;
+        private Button Register_Btn;
+        private Button Login_Btn;
         private Label label3;
     }
 }
